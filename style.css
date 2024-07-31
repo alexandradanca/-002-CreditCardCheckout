@@ -111,7 +111,6 @@ img {
 .buyBtn {
     text-decoration: none;
     grid-area: 2/2/3/3;
-    width: 100%;
     height: fit-content;
     padding: 1.5vh 0;
     text-transform: uppercase;
@@ -307,6 +306,10 @@ input::placeholder, select, input {
 
     h1>hr {
         display: none;
+    }
+
+    .selectBox>a>img {
+        height: 5vh;
     }
 }
 
