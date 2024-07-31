@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playwrite+US+Trad:wght@100..400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="containerGlobal grid">
+      <div class="containerPay">
+        <h1>
+          select payment method
+          <hr />
+        </h1>
+        <div class="vBox">
+          <div class="selectBox grid">
+            <a
+              class="selectBoxbtn flexCenter"
+              href="#"
+              onmouseover="onHover(crd);"
+              onmouseout="offHover();"
+            >
+              <img id="crd" src="./assets/images/credit-cards.png" /> Credit
+              card</a
+            >
+            <a
+              class="selectBoxbtn flexCenter"
+              href="#"
+              onmouseover="onHover(transaction);"
+              onmouseout="offHover();"
+              ><img id="transaction" src="./assets/images/transaction.png" />
+              Bank Transfer</a
+            >
+            <a
+              class="selectBoxbtn flexCenter"
+              href="#"
+              onmouseover="onHover(pp);"
+              onmouseout="offHover();"
+              ><img id="pp" src="./assets/images/paypal.png" /> PayPal</a
+            >
+          </div>
+          <div class="lbl">
+            <label for="fname">name on card</label><br />
+            <input type="text" id="fname" name="fname" /><br />
+          </div>
+          <div class="lbl">
+            <label for="ccn">Credit Card Number:</label><br />
+            <input
+              id="ccn"
+              type="tel"
+              inputmode="numeric"
+              pattern="[0-9\s]{13,19}"
+              autocomplete="cc-number"
+              maxlength="19"
+              placeholder="xxxx-xxxx-xxxx-xxxx"
+              required
+            /><br />
+          </div>
+          <div class="selectBox grid">
+            <div class="lbl">
+              <label>Month</label>
+              <select name="Month">
+                <option value="january">January</option>
+                <option value="february">February</option>
+                <option value="march">March</option>
+                <option value="april">April</option>
+                <option value="may">May</option>
+                <option value="june">June</option>
+                <option value="july">July</option>
+                <option value="august">August</option>
+                <option value="september">September</option>
+                <option value="october">October</option>
+                <option value="november">November</option>
+                <option value="december">December</option>
+              </select>
+            </div>
+            <div class="lbl">
+              <label>Year</label>
+              <select name="Year">
+                <option value="2024">2024</option>
+                <option value="2024">2025</option>
+                <option value="2024">2026</option>
+                <option value="2024">2027</option>
+                <option value="2024">2028</option>
+                <option value="2024">2029</option>
+                <option value="2024">2030</option>
+              </select>
+            </div>
+            <div class="lbl">
+              <label>
+                CVV
+                <input type="text" placeholder="3-digit CVV" />
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="containerSummary">
+        <h1>
+          order summary
+          <hr />
+        </h1>
+        <div class="vBox">
+          <h3>iPhone 14 Plus<span> 979€</span></h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+            sodales, elit sed scelerisque porta.
+          </p>
+          <div class="itemsDetail grid">
+            <p><img src="./assets/images/green-check.png" /> Blue colour</p>
+            <p><img src="./assets/images/green-check.png" /> 128GB storage</p>
+            <p><img src="./assets/images/green-check.png" /> AppleCare+</p>
+            <p><img src="./assets/images/green-check.png" /> Free shipping</p>
+            <p><img src="./assets/images/green-check.png" /> Lightning cable</p>
+          </div>
+          <div class="dayBox">
+            <p id="day" class="flexCenter"></p>
+            <div class="hBox">
+              <p id="date"></p>
+              <hr />
+              <p id="time"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="buyBtn flexCenter" href="#">Purchase now</a>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
