@@ -9,7 +9,6 @@
 - CSS
 
 ## Features
-**📖 Multi-Page Layout**
 
 **🎨 Styled just with CSS**
 
