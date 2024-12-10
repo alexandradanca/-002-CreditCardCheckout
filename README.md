@@ -1,5 +1,5 @@
 <h2 align="center">
-  <a href="https://alexandradanca.github.io/-002-CreditCardCheckout/" target="_blank">CreditCardCheckout</a>
+ :money_with_wings: <a href="https://alexandradanca.github.io/-002-CreditCardCheckout/" target="_blank">Credit Card Checkout</a>
 </h2>
 
 <p>This is a Checkout page. </br>It was created during front-end learning journey</p>
