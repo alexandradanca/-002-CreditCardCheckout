@@ -2,7 +2,7 @@
  :money_with_wings: <a href="https://alexandradanca.github.io/-002-CreditCardCheckout/" target="_blank">Credit Card Checkout</a>
 </h2>
 
-<p>This is a Checkout page. </br>It was created during front-end learning journey</p>
+<p>Checkout page with payment method and order summary elements. </br>It was created during front-end learning journey</p>
 
 ## Built With
 - HTML
